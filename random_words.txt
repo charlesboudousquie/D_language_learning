@@ -1,0 +1,96 @@
+random thoughts:
+
+processing text:
+first you read it, then you understand it,
+then you put it all together with what you
+CURRENTLY know.
+
+// reading comprehension
+First you must know the meaning of a word,
+then you need to know what it means given
+the current context, 
+then follow the organization of said words,
+then find antecedents and references
+    *antecedent - an event or thing that has happened before
+               It could be a phrase(group of words),
+               a clause or just a word.
+               "The dog is noisy, but we like him."
+               "dog" is the Antecedent.
+               "him" is pronoun that refers back
+               to the "dog". 
+               Note: instead of using the word dog again,
+                we just use a pronoun (placeholder? pointer?).
+                
+                There are also implied antecedents:
+                   * you and your buddy both spot someone
+                   at the same time. You say:
+                   "he really is a cool guy".
+                   The antecedent is NOT in the sentence,
+                   that abstract "guy" is an implied antecedent
+                   that you discern from some previous event or
+                   conversation. You still used "he" but he in itself
+                   does not DIRECTLY correspond to the "guy" 
+                   IF you don't have a CONTEXT.
+                   Without pronouns or object references to the antecedent,
+                   a sentence will become repetitive.
+                   CONTEXT allows antecedents to work!
+                
+then draw inferences(conclusions) about it,
+then identify main thought/purpose of sentence,
+then be able to answer questions in it,
+then recognize literary devices(foreshadow,cliffhangar,backstory),
+then determine tone,
+then understand the current situation,,
+then understand speaker's intent,
+then reasses the speaker.
+
+Above mentioned are not necessarily in order.
+
+Sometimes taking too much time understanding one word,
+prevents you from understanding the rest of the sentence.
+
+
+Metacognition - the ability to think about your
+                own thought processes.
+
+Reading Comprehension Levels
+{
+    A shallow and deep level.
+    
+    Shallow
+        *low level processing.
+        *
+    Deep
+        *High Level processing
+        *involves encoding the meaning of
+         a word and relating it to similar words.
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
