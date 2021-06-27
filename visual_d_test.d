@@ -192,11 +192,28 @@ void inKeyword()
     r.writeln();
 }
 
-void zipUsage()
+void zipAndLockstepUsage()
 {
     auto a = assocArray(zip([0, 1, 2], ["a", "b", "c"])); // aka zipMap
     static assert(is(typeof(a) == string[int]));
     writeln(a); // [0:"a", 1:"b", 2:"c"]
+
+    auto arr1 = [1,2,3,4,5,100];
+    auto arr2 = [6,7,8,9,10];
+
+    foreach (ref a, b; lockstep(arr1, arr2))
+    {
+        a += b;
+    }
+
+    writeln(arr1); // [7, 9, 11, 13, 15, 100]
+
+    /// Lockstep also supports iterating with an index variable:
+    foreach (index, a, b; lockstep(arr1, arr2))
+    {
+        writeln(arr1[index]); // a
+        writeln(arr2[index]); // b
+    }
 }
 
 // writeln(x++) is not actually called
@@ -249,14 +266,32 @@ void parrallelismAndTimers()
         }
 
         MonoTime after = MonoTime.currTime;
-        Duration dur = after - before;
-        dur.split.seconds.writeln;
+        Duration l_dur = after - before;
+        l_dur.split.seconds.writeln;
+
+
+
+        auto d = dur!"days"(12) + dur!"minutes"(7) + dur!"usecs"(501223);
+        long days;
+        int seconds;
+        short msecs;
+        d.split!("days", "seconds", "msecs")(days, seconds, msecs);
+        assert(days == 12);
+        assert(seconds == 7 * 60);
+        assert(msecs == 501);
+
+        d = dur!"days"(12);
+        assert(d.split!"weeks"().weeks == 1);
+        assert(d.split!"days"().days == 12);
+
+        assert(d.split().weeks == 1);
+        assert(d.split().days == 5);
 
 }
 
 void main()
 {
-    int[] test_array = [1,2,3,4];
+    //int[] test_array = [1,2,3,4];
     //test_array.reverse;
     //test_array.writeln;
 
